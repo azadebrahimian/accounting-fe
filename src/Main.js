@@ -5,7 +5,9 @@ import "./Main.scss";
 function Main() {
 
   return (
-    <NavBar />
+    <>
+      <NavBar />
+    </>
   );
 }
 
