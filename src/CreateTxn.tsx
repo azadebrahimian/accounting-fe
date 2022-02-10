@@ -9,6 +9,7 @@ import "./CreateTxn.scss";
 function CreateTxn() {
     const [amountError, setAmountError] = useState(false);
     const [amount, setAmount] = useState(0);
+    const [transactionType, setTransactionType] = useState("spent");
     const [location, setLocation] = useState("");
     const [date, setDate] = useState(null);
 
@@ -38,7 +39,7 @@ function CreateTxn() {
                     label="Location"
                     onChange={(e) => setLocation(e.target.value)}
                 />
-                <RadioGroup row defaultValue="spent">
+                <RadioGroup row value={transactionType}>
                     <FormControlLabel
                         value="spent"
                         label="Spent"
