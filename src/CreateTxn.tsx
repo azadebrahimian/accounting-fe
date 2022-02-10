@@ -19,7 +19,7 @@ function CreateTxn() {
     return (
         <div className="create-main">
             <h1>Create a new transaction here.</h1>
-            <form className="create-form">
+            {/* <form className="create-form">
                 <TextField
                     variant="standard"
                     label="Amount"
@@ -61,7 +61,7 @@ function CreateTxn() {
                         renderInput={(params) => <TextField {...params} />}
                     />
                 </LocalizationProvider>
-            </form>
+            </form> */}
         </div>
     );
 }
